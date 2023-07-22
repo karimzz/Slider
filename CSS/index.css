@@ -172,6 +172,24 @@ main{
     transition: .5s;
 }
 
+.slider-cotainer::-webkit-scrollbar {
+    width: 0px;
+  }
+
+/* Track */
+.slider-cotainer::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  .slider-cotainer::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+  
+  /* Handle on hover */
+  .slider-cotainer::-webkit-scrollbar-thumb:hover {
+    background: transparent;}
+
 .arrow{
     background-color: white;
     width: 40px;

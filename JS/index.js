@@ -32,7 +32,7 @@ function checkArrowRight()
 
 function checkArrowLeft()
 {
-    if(counter == containerWidth)
+    if(counter <= containerWidth)
     {
         document.querySelector(".ll").style.cssText = `display : none ;`
     }else{
@@ -58,6 +58,12 @@ document.querySelector(".rr").onclick = ()=>{
 
 
 // For Left Event
+document.querySelector(".ll").onclick = ()=>{
+    checkArrowLeft() ; 
+    counter -= cardWidth ; 
+    kCounter -= cardWidth ; 
+    container.scroll(kCounter , 0 )
+}
 
 
 
