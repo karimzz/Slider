@@ -14,15 +14,14 @@ let kCounter = 0 ;
 
 
 // For Show Arrow Button
-if(containerWidth >= (cardWidth * numberOfCard) )
+checkArrowLeft()
+if(containerWidth == counter  )
 {
-    document.querySelector(".rr").style.cssText = "display:none;"
     document.querySelector(".ll").style.cssText = "display:none;"
 }
 
 function checkArrowRight()
 {
-    console.log("Arrow Right Invoked")
     if(counter >= containerTotalWidth)
     {
         document.querySelector(".rr").style.cssText = `display: none ; `;
@@ -33,7 +32,7 @@ function checkArrowRight()
 
 function checkArrowLeft()
 {
-    if(counter >= containerTotalWidth)
+    if(counter == containerWidth)
     {
         document.querySelector(".ll").style.cssText = `display : none ;`
     }else{
@@ -42,11 +41,12 @@ function checkArrowLeft()
 }
 
 
-// For Scroll Event 
+// For Right Event 
 document.querySelector(".rr").onclick = ()=>{
     checkArrowRight() ;
     if(counter < containerTotalWidth)
     {
+        counter += cardWidth ; 
         kCounter += cardWidth ;
         container.scrollTo(kCounter , 0) ;
     }
@@ -55,4 +55,15 @@ document.querySelector(".rr").onclick = ()=>{
     }
 }
 
+
+
+// For Left Event
+
+
+
+// For Every Scroll Event
+container.onscroll = (e)=>{
+    checkArrowLeft()
+    checkArrowRight()
+}
 

@@ -1,5 +1,11 @@
 /* Start Global Rule */
 
+html{
+    scroll-behavior: smooth;
+    transition: .4s;
+
+}
+
 body{
     font-family: 'Almarai', sans-serif;
 font-family: 'Cairo', sans-serif;
@@ -9,6 +15,7 @@ font-family: 'Permanent Marker', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
 }
+
 
 *{
     padding: 0;
@@ -134,6 +141,7 @@ font-family: 'Roboto', sans-serif;
     margin: 0 auto;
     padding: 10px;
     max-width: 100%;
+    transition: .4s;
 }
 
 /* End Container */
@@ -151,12 +159,15 @@ main{
     margin: 0 auto;
     max-width: 100%;
     transition: .5s;
+    scroll-behavior: smooth;
+
 
 }
 
 .slider-cotainer{
     display: flex;
     overflow-x: scroll;
+    scroll-behavior: smooth;
     position: relative;
     transition: .5s;
 }
