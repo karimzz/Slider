@@ -43,15 +43,19 @@ font-family: 'Roboto', sans-serif;
 
 .card .image {
     background-color: #EEE;
-    width: 176px;
+    /* width: 176px; */
+    width: 204px;
+    height: 250px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
 }
 
 .card .image img{
-    width: 204px;
+    
+    object-fit: cover;
     /* object-fit: cover; */
 }
 
