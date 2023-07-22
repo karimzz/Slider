@@ -172,22 +172,22 @@ main{
     transition: .5s;
 }
 
-.slider-cotainer::-webkit-scrollbar {
+::-webkit-scrollbar {
     width: 0px;
   }
 
 /* Track */
-.slider-cotainer::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: transparent;
   }
   
   /* Handle */
-  .slider-cotainer::-webkit-scrollbar-thumb {
+ ::-webkit-scrollbar-thumb {
     background: transparent;
   }
   
   /* Handle on hover */
-  .slider-cotainer::-webkit-scrollbar-thumb:hover {
+ ::-webkit-scrollbar-thumb:hover {
     background: transparent;}
 
 .arrow{

@@ -9,16 +9,12 @@ let numberOfCard = document.querySelectorAll(".card").length ;
 
 
 let counter = containerWidth ; 
-
 let kCounter = 0 ; 
 
 
 // For Show Arrow Button
-checkArrowLeft()
-if(containerWidth == counter  )
-{
-    document.querySelector(".ll").style.cssText = "display:none;"
-}
+checkArrowLeft();
+
 
 function checkArrowRight()
 {
@@ -67,9 +63,13 @@ document.querySelector(".ll").onclick = ()=>{
 
 
 
+
+
 // For Every Scroll Event
 container.onscroll = (e)=>{
-    checkArrowLeft()
-    checkArrowRight()
+    if(container.scrollLeft == 0 )
+        counter = containerWidth
+    checkArrowLeft() ;
+    checkArrowRight() ; 
 }
 
