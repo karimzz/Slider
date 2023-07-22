@@ -1,0 +1,188 @@
+/* Start Global Rule */
+
+body{
+    font-family: 'Almarai', sans-serif;
+font-family: 'Cairo', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Permanent Marker', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 2px;
+    box-sizing: border-box;
+}
+
+/* End Global Rule */
+
+
+/* Start Card  */
+
+.card{
+    width:222px;
+    /* background:red; */
+    /* text-align: center; */
+    background-color: white;
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+    height: 100%;
+    transition: .5s;
+
+}
+
+.card .image {
+    background-color: #EEE;
+    width: 176px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.card .image img{
+    width: 204px;
+    /* object-fit: cover; */
+}
+
+.card .text {
+    margin-top: 10px;
+    
+}
+
+.card .text .info .details{
+    font-weight: bold;
+    font-size: 13px;
+    color: #444956;
+}
+
+.card .text .info .price{
+    font-size: 12px;
+    /* text-align: left; */
+    margin-top: 10px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    color:#444956;
+
+}
+
+.card .text .info .price .Bprice{
+    font-weight: bold;
+    font-size: 19px;
+    color:#444956;
+    margin-left: 4px;
+}
+
+
+.card .text .devliever{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 33px;
+}
+
+.card .text .devliever .rate{
+    display: flex;
+}
+
+.card .text .devliever .express{
+    background-color: #feee00;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2px 4px;
+    font-weight: bold;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.card .text .devliever .r{
+    background: #38ae04;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding: 1px 4px;
+    
+}
+
+.card .text .devliever .r .fa-star{
+    font-size: 9px;
+}
+
+
+.card .text .devliever .numR{
+    color: #afb2c0;
+    font-size: 12px;
+}
+
+/* End Card  */
+
+
+/* Start Container */
+
+.container{
+    width: 1400px;
+    background-color: #EEE;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 100%;
+}
+
+/* End Container */
+
+
+
+
+
+/* Start  Main  Container */
+
+
+main{
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    max-width: 100%;
+    transition: .5s;
+
+}
+
+.slider-cotainer{
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    transition: .5s;
+}
+
+.arrow{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #d2d3d4;
+    z-index: 1000;
+    cursor: pointer;
+}
+ .rr{
+    right: 0;
+    top: 50%;
+}
+
+ .ll{
+    left: 0;
+    top: 50%;
+}
+
+
+/* End  Main  Container */
